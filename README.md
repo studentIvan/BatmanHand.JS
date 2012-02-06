@@ -1,4 +1,5 @@
-# Batman History Api Navigation Dispatcher (Batman HAND)
+# Batman HAND
+## Batman History Api Navigation Dispatcher
 ### Simple html5 javascript history api helper
 
 ## Using
