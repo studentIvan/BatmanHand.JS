@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 History Api</title>
+    <script type="text/javascript" src="/batman_hand.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navigation {
+            background: #43a;
+            padding: 10px;
+        }
+
+        #navigation a {
+            color: #ddd;
+            margin-right: 5px;
+            text-decoration: none;
+            font-size: 2em;
+        }
+
+        #navigation a:hover {
+            color: gold;
+            border-bottom: dashed 1px gold;
+        }
+
+        #batman-container {
+            padding: 20px;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+<div id="navigation">
+    <a href="/" data-history="HTML5 History Api">home</a>
+    <a href="/hello" data-history="Hello">hello</a>
+    <a href="/blabla" data-history="Bla Bla">blabla</a>
+    <a href="/blabla/bla.html" data-history="Blabla Bla">blabla/bla.html</a>
+    <a href="/testing.html" style="color: white" target="_blank">tests</a>
+</div>
+<div id="batman-container"></div>
+<script type="text/javascript">
+    batmanHand.init(function (path, title) {
+        document.title = title;
+        document.getElementById('batman-container').innerHTML = path;
+    });
+</script>
+</body>
+</html>
