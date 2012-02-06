@@ -12,7 +12,7 @@ batmanHand.init(function (path, title) {
 });
 </pre>
 3. Add data-history attribute on your references (Hello World is a new webpage title):<br>
-<pre><a href="/hello/world" data-history="Hello World"></a></pre>
+`<a href="/hello/world" data-history="Hello World"></a>`
 
 
 ## Not supported html5 history api? No problem
